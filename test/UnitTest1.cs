@@ -54,22 +54,22 @@ namespace TestProject1
             string txt = file.ReadToEnd();
             for(int i = 0; i < txt.Length-1; i++)
             {
-                if(txt[i]=='ô'&& txt[i+1] == 'ý')
+                if(txt[i]=='Ã´'&& txt[i+1] == 'Ã½')
                 {
                     mark = false;
-                } else if (txt[i] == 'ï' && txt[i + 1] == 'ê')
-                {
-                    mark = false;
-                }
-                else if (txt[i] == 'æ' && txt[i + 1] == 'û')
+                } else if (txt[i] == 'Ã¯' && txt[i + 1] == 'Ãª')
                 {
                     mark = false;
                 }
-                else if (txt[i] == 'ë' && txt[i + 1] == 'ù')
+                else if (txt[i] == 'Ã¦' && txt[i + 1] == 'Ã»')
                 {
                     mark = false;
                 }
-                else if (txt[i] == '÷' && txt[i + 1] == 'ç')
+                else if (txt[i] == 'Ã«' && txt[i + 1] == 'Ã¹')
+                {
+                    mark = false;
+                }
+                else if (txt[i] == 'Ã·' && txt[i + 1] == 'Ã§')
                 {
                     mark = false;
                 }
@@ -92,11 +92,11 @@ namespace TestProject1
             int count3 = 0;
             for (int i = 0; i < words.Length - 1; i++)
             {
-                if (words[i] == "è")
+                if (words[i] == "Ã¨")
                     count1++;
-                if (words[i] == "æèçíü")
+                if (words[i] == "Ã¦Ã¨Ã§Ã­Ã¼")
                     count2++;
-                if (words[i] == "ìåñòî")
+                if (words[i] == "Ã¬Ã¥Ã±Ã²Ã®")
                     count3++;
             }
             Assert.IsTrue(count1 > count2);
@@ -117,9 +117,9 @@ namespace TestProject1
             int count2 = 0;
             for (int i = 0; i < words.Length - 1; i++)
             {
-                if (words[i] == "è" && words[i+1]=="íå")
+                if (words[i] == "Ã¨" && words[i+1]=="Ã­Ã¥")
                     count1++;
-                else if (words[i] == "è" && words[i + 1] == "íà")
+                else if (words[i] == "Ã¨" && words[i + 1] == "Ã­Ã ")
                     count2++;
             }
             Assert.IsTrue(count1 > count2);
@@ -139,7 +139,7 @@ namespace TestProject1
 
             for (int i = 0; i < words.Length - 1; i++)
             {
-                if (words[i] == "åùå")
+                if (words[i] == "Ã¥Ã¹Ã¥")
                     count++;
             }
             Assert.AreEqual(9, count);
@@ -157,7 +157,7 @@ namespace TestProject1
             int count = 0;
             for (int i = 0; i < words.Length - 1; i++)
             {
-                if (words[i] == "ÿ" && words[i + 1] == "è")
+                if (words[i] == "Ã¿" && words[i + 1] == "Ã¨")
                     count++;
             }
             Assert.AreEqual(5, count);
