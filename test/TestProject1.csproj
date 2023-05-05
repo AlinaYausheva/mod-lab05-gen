@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -14,7 +14,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Генератор текста\Генератор текста.csproj" />
+    <ProjectReference Include="..\ProjCharGenerator\ProjCharGenerator.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="TextByBigrams.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    
+    <None Update="TextByWordPairs.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    
+    <None Update="TextByWords.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+
   </ItemGroup>
 
 </Project>
