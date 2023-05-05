@@ -54,22 +54,22 @@ namespace TestProject1
             string txt = file.ReadToEnd();
             for(int i = 0; i < txt.Length-1; i++)
             {
-                if(txt[i]=='ô'&& txt[i+1] == 'ý')
+                if(txt[i]=='ф'&& txt[i+1] == 'э')
                 {
                     mark = false;
-                } else if (txt[i] == 'ï' && txt[i + 1] == 'ê')
-                {
-                    mark = false;
-                }
-                else if (txt[i] == 'æ' && txt[i + 1] == 'û')
+                } else if (txt[i] == 'п' && txt[i + 1] == 'к')
                 {
                     mark = false;
                 }
-                else if (txt[i] == 'ë' && txt[i + 1] == 'ù')
+                else if (txt[i] == 'ж' && txt[i + 1] == 'ы')
                 {
                     mark = false;
                 }
-                else if (txt[i] == '÷' && txt[i + 1] == 'ç')
+                else if (txt[i] == 'ч' && txt[i + 1] == 'з')
+                {
+                    mark = false;
+                }
+                else if (txt[i] == 'л' && txt[i + 1] == 'щ')
                 {
                     mark = false;
                 }
@@ -92,11 +92,11 @@ namespace TestProject1
             int count3 = 0;
             for (int i = 0; i < words.Length - 1; i++)
             {
-                if (words[i] == "è")
+                if (words[i] == "и")
                     count1++;
-                if (words[i] == "æèçíü")
+                if (words[i] == "жизнь")
                     count2++;
-                if (words[i] == "ìåñòî")
+                if (words[i] == "место")
                     count3++;
             }
             Assert.IsTrue(count1 > count2);
@@ -117,9 +117,9 @@ namespace TestProject1
             int count2 = 0;
             for (int i = 0; i < words.Length - 1; i++)
             {
-                if (words[i] == "è" && words[i+1]=="íå")
+                if (words[i] == "и" && words[i+1]=="не")
                     count1++;
-                else if (words[i] == "è" && words[i + 1] == "íà")
+                else if (words[i] == "и" && words[i + 1] == "на")
                     count2++;
             }
             Assert.IsTrue(count1 > count2);
@@ -139,7 +139,7 @@ namespace TestProject1
 
             for (int i = 0; i < words.Length - 1; i++)
             {
-                if (words[i] == "åùå")
+                if (words[i] == "еще")
                     count++;
             }
             Assert.AreEqual(9, count);
