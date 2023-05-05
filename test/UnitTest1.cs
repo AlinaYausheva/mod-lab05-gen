@@ -12,7 +12,7 @@ namespace TestProject1
         public void TestMethod1()
         {
             string file_name = "TextByBigrams.txt";
-            file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
+            //file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
             StreamReader file = new StreamReader(file_name, false);
 
             string txt = file.ReadToEnd();
@@ -23,7 +23,7 @@ namespace TestProject1
         public void TestMethod2()
         {
             string file_name = "TextByWords.txt";
-            file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
+            //file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
             StreamReader file = new StreamReader(file_name, false);
 
             string txt = file.ReadToEnd();
@@ -35,7 +35,7 @@ namespace TestProject1
         public void TestMethod3()
         {
             string file_name = "TextByWordPairs.txt";
-            file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
+            //file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
             StreamReader file = new StreamReader(file_name, false);
 
             string txt = file.ReadToEnd();
@@ -48,7 +48,7 @@ namespace TestProject1
         {
             bool mark = true;
             string file_name = "TextByBigrams.txt";
-            file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
+            //file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
             StreamReader file = new StreamReader(file_name, false);
 
             string txt = file.ReadToEnd();
@@ -82,7 +82,7 @@ namespace TestProject1
         {
             bool mark = true;
             string file_name = "TextByWords.txt";
-            file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
+            //file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
             StreamReader file = new StreamReader(file_name, false);
 
             string txt = file.ReadToEnd();
@@ -108,7 +108,7 @@ namespace TestProject1
         {
             bool mark = true;
             string file_name = "TextByWords.txt";
-            file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
+            //file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
             StreamReader file = new StreamReader(file_name, false);
 
             string txt = file.ReadToEnd();
@@ -130,7 +130,7 @@ namespace TestProject1
         public void TestMethod7()
         {
             string file_name = "TextByWords.txt";
-            file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
+            //file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
             StreamReader file = new StreamReader(file_name, false);
 
             string txt = file.ReadToEnd();
@@ -149,7 +149,7 @@ namespace TestProject1
         public void TestMethod8()
         {
             string file_name = "TextByWords.txt";
-            file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
+            //file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
             StreamReader file = new StreamReader(file_name, false);
 
             string txt = file.ReadToEnd();
