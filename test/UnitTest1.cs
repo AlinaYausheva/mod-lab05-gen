@@ -157,7 +157,7 @@ namespace TestProject1
             int count = 0;
             for (int i = 0; i < words.Length - 1; i++)
             {
-                if (words[i] == "ÿ" && words[i + 1] == "è")
+                if (words[i] == "я" && words[i + 1] == "и")
                     count++;
             }
             Assert.AreEqual(5, count);
